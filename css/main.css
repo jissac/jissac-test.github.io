@@ -10,9 +10,17 @@
     background-size:     cover;
     object-fit:contain;
     opacity: 1;
+    display: block;
 }
 
 .bookcover-stack-image:hover {
     opacity:.7;
 }
 
+.books-headline{
+    display: inline-block;
+}
+
+.dropdown {
+    display: inline-block;
+}
