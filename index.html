@@ -1,42 +1,89 @@
 <html>
     <head>
+        <title> JI </title>
         <link href="./css/main.css" rel="stylesheet">
+        <script>        
+            var divs = document.getElementsByClassName("bookcover-stack");
+
+            function showDivs(event) {
+                var id = event.value;
+                console.log("ID",id);
+                for (var i=0; i<divs.length; i++) {
+                    if (divs[i].id==id) {
+                        console.log(divs[i].id);
+                        divs[i].style.display='block';
+                    } else {
+                        console.log("NOPE");
+                        divs[i].style.display = 'none';
+                    }
+                }
+            }
+
+            window.onload=function() {
+                showDivs(document.getElementById("selectBooks"));
+            }
+        </script>
     </head>
+    
     <body>
         <section id="bookshelf" class="bookshelf">
+            <div class="container">
+                <h2> Bookshelf</h2>
+                <p> Good books are like dear friends. </p>
+            </div>
         
             <div class="books-headline"> Books I've read </div>
             <div class="dropdown">
                 <div class="dropdown-content">
-                        <select id="selColor">
-                                <option selected> in 2018</option>
-                                <option> in 2017</option>
-                                <option> in 2016</option>
-                                <option> in 2015</option>
-                                <option> in 2014</option>
-                            </select>
+                        <select id="selectBooks" onchange="showDivs(this)">
+                                <option value="2018" selected> in 2018</option>
+                                <option value="2017"> in 2017</option>
+                                <option value="2016"> in 2016</option>
+                                <option value="2015"> in 2015</option>
+                                <option value="2014"> in 2014</option>
+                                <option value="favs"> Perennial favs </option>
+                        </select>
                             
                 </div>
             </div> 
 
-            <div class="bookcover-stack-image"> 
-                <a href="https://www.goodreads.com/book/show/22847284-grokking-algorithms-an-illustrated-guide-for-programmers-and-other-curio">
-                    <img class="bookcover-stack-image" src="./img/grokking.jpg">
-                </a>
-            </div>
+            <div class="bookcovers">
+                <div class="bookcover-stack" id="2018"> 
+                    <a href="https://www.goodreads.com/book/show/22847284-grokking-algorithms-an-illustrated-guide-for-programmers-and-other-curio">
+                        <img class="bookcover-stack-image" src="./img/grokking.jpg">
+                    </a>
+                </div>
 
-            <div class="bookcover-stack-image"> 
-                <a href="https://www.goodreads.com/book/show/16301.An_Autobiography">
-                    <img class="bookcover-stack-image" src="./img/agatha.jpg">
-                </a>    
-            </div>
+                <div class="bookcover-stack" id="2018"> 
+                    <a href="https://www.goodreads.com/book/show/16301.An_Autobiography">
+                        <img class="bookcover-stack-image" src="./img/agatha1.jpg">
+                    </a>    
+                </div>
 
-            <div class="bookcover-stack-image"> 
-                <a href="https://www.goodreads.com/book/show/44882.Code">
-                    <img class="bookcover-stack-image" src="./img/code.jpg">
-                </a>
-            </div>
+                <div class="bookcover-stack" id="2018"> 
+                    <a href="https://www.goodreads.com/book/show/44882.Code">
+                        <img class="bookcover-stack-image" src="./img/code.jpg">
+                    </a>
+                </div>
 
+                <div class="bookcover-stack" id="2018"> 
+                        <a href="">
+                            <img class="bookcover-stack-image" src="./img/homl.jpg">
+                        </a>
+                </div>
+
+                <div class="bookcover-stack" id="2017"> 
+                        <a href="">
+                            <img class="bookcover-stack-image" src="./img/never-split.jpg">
+                        </a>
+                </div>
+
+                <div class="bookcover-stack" id="favs"> 
+                        <a href="">
+                            <img class="bookcover-stack-image" src="./img/bible.jpg">
+                        </a>
+                </div>
+        </div>
 
         </section>
 
