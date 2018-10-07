@@ -2,6 +2,8 @@
     <head>
         <title> JI </title>
         <link href="./css/main.css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css">
         <script>        
             var divs = document.getElementsByClassName("bookcover-stack");
 
@@ -26,13 +28,58 @@
     </head>
     
     <body>
+        <!-- Pic, LI, Twitter, Github links -->
+        <section id="intro" class = "intro">
+            <div class="container">
+                <div id="profile">
+                    <img class="portrait" src="" itemprop="image">
+                    <div class="portrait-title">
+                            <h1 align="center" itemprop="name">James Issac</h1>
+                    </div>
+                    <ul class="network-icon" aria-hidden="true">
+                            <li>
+                              <a itemprop="sameAs" href="mailto:dahong@umich.edu" target="_blank" rel="noopener">
+                                <i class="fas fa-envelope big-icon"></i>
+                              </a>
+                            </li>
+
+                            <li>
+                              <a itemprop="sameAs" href="https://scholar.google.com/citations?user=eCpkx4cAAAAJ" target="_blank" rel="noopener">
+                                <i class="ai ai-google-scholar big-icon"></i>
+                              </a>
+                            </li>
+
+                            <li>
+                              <a itemprop="sameAs" href="//github.com/jissac3" target="_blank" rel="noopener">
+                                <i class="fab fa-github big-icon"></i>
+                              </a>
+                            </li>
+
+                            <li>
+                              <a itemprop="sameAs" href="files/vitae.pdf" target="_blank" rel="noopener">
+                                <i class="ai ai-cv big-icon"></i>
+                              </a>
+                            </li>
+                            
+                          </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class = "about">
+            <div class="container">
+                    <h1 align="center">About</h1>
+                    <p> Add quote </p>
+            </div>
+        </section>
+
         <section id="bookshelf" class="bookshelf">
             <div class="container">
-                <h2> Bookshelf</h2>
+                <h1 align="center">Bookshelf</h1>
                 <p> Good books are like dear friends. </p>
             </div>
             <div >
-                <div class="books-headline"> Books I've read </div>
+                <div class="books-headline"> <h3>Books I've read </h3></div>
                 <div class="dropdown">
                     <div class="dropdown-content">
                             <select id="selectBooks" onchange="showDivs(this)">
@@ -68,9 +115,15 @@
                 </div>
 
                 <div class="bookcover-stack" id="2018"> 
-                        <a href="">
-                            <img class="bookcover-stack-image" src="./img/homl.jpg">
-                        </a>
+                    <a href="">
+                        <img class="bookcover-stack-image" src="./img/homl.jpg">
+                    </a>
+                </div>
+
+                <div class="bookcover-stack" id="2018"> 
+                    <a href="">
+                        <img class="bookcover-stack-image" src="./img/health-nations.jpg">
+                    </a>
                 </div>
 
                 <div class="bookcover-stack" id="2017"> 
@@ -88,5 +141,19 @@
 
         </section>
 
+        <section id="projects" class = "projects">
+                <div class="container">
+                        <h1 align="center">Projects</h1>
+                        <p> Add quote </p>
+                </div>
+        </section>
+
+        <section id="photos" class = "photos">
+            <div class="container">
+                    <h1 align="center">Photos</h1>
+                    <p align="center"> Add quote </p>
+            </div>
+        </section>
+        
     </body>
 </html>

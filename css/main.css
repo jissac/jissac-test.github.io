@@ -1,5 +1,73 @@
-/*https://stackoverflow.com/questions/19414856/how-can-i-make-all-images-of-different-height-and-width-the-same-via-css
-*/
+
+html {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    color: rgba(0,0,0,0.8);
+    line-height: 1.65;
+}
+p { text-align: center }
+
+/* Headings */
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Helvetica', sans-serif;
+    font-weight: 500;
+    margin-top: 1rem;
+    margin-bottom: .5rem;
+    line-height: 1.25;
+    color: #313131;
+    text-rendering: optimizeLegibility;
+    overflow-wrap: break-word; /* Ensures very long heading words do not overflow into content. */
+    
+  }
+  h1 {
+    font-size: 2.75rem;
+  }
+  h2 {
+    margin-top: 1rem;
+    font-size: 1.5rem;
+  }
+  h3 {
+    font-weight: 700;
+    margin-top: 1.5rem;
+    font-size: 1.25rem;
+  }
+  h4, h5, h6 {
+    font-weight: 700;
+    margin-top: 1rem;
+    font-size: 1rem;
+  }
+
+
+#profile ul.network-icon {
+    display: inline-flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+    margin-top: 30px;
+  }
+  
+  #profile .network-icon li {
+    margin-right: 10px;
+  }
+  
+  #profile .network-icon li:last-of-type {
+    margin-right: 0;
+  }
+  
+  #profile .network-icon li:hover {
+    transform: scale(1.2)
+  }
+
+.big-icon {
+font-size: 2rem;
+}
+
+.container {
+    justify-content: center
+}
+
 .bookcover-stack-image, .bookcover-stack {
     
     float: left;
@@ -26,3 +94,9 @@
 .bookcovers {
     display: table-cell;
 }
+
+
+
+
+
+
