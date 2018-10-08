@@ -4,12 +4,30 @@ html {
     font-size: 16px;
     color: rgba(0,0,0,0.8);
     line-height: 1.65;
+
 }
 p { text-align: center }
 
+#about,#projects {
+    background-color: rgb(247,247,247);
+}
+#banner{
+    background-color: rgb(0,0,0);
+    height: 10%;
+    margin: 0 auto;
+}
+.header{
+    color: rgb(255, 255, 255);
+    margin: 0 auto;
+}
+
+#end{
+    background-color: rgb(0,0,0);
+    height: 300px;
+}
 /* Headings */
 h1, h2, h3, h4, h5, h6 {
-    font-family: 'Helvetica', sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-weight: 500;
     margin-top: 1rem;
     margin-bottom: .5rem;
@@ -75,7 +93,7 @@ font-size: 2rem;
     height: 300;
     object-fit:contain;
     opacity: 1;
-    padding: 1em;
+    padding: 0.5em;
 }
 
 .bookcover-stack-image:hover {
@@ -84,7 +102,7 @@ font-size: 2rem;
 
 .books-headline{
     display: inline-block;
-    padding: 1em;
+    padding: 0.5em;
 }
 
 .dropdown {
